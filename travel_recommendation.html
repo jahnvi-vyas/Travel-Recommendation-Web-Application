@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h2>🌍 TravelBloom</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+
+        </ul>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search Country, Beach, Temple...">
+            <button id="searchBtn">
+                Search
+            </button>
+            <button id="clearBtn">
+                Clear
+            </button>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World</h1>
+            <p>
+                Discover beautiful countries, famous beaches,
+                ancient temples and amazing cities.
+                Find your next travel destination with TravelBloom.
+            </p>
+            <button class="explore-btn">
+                Explore Now
+            </button>
+        </div>
+    </section>
+    <section class="recommendation-section">
+        <h2>Travel Recommendations</h2>
+        <div id="recommendationResults" class="recommendation-results">
+        </div>
+    </section>
+    <section class="time-section">
+        <h2>Current Time</h2>
+        <p id="countryTime">
+            Loading...
+        </p>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to <strong>TravelBloom</strong>.
+            We help travelers discover the world's most
+            beautiful destinations by providing recommendations
+            based on countries, beaches, temples, and cities.
+        </p>
+        <div class="team">
+            <div class="member">
+                <h3>John Smith</h3>
+                <p>Travel Expert</p>
+            </div>
+            <div class="member">
+                <h3>Emily Davis</h3>
+                <p>Destination Specialist</p>
+            </div>
+            <div class="member">
+                <h3>Michael Lee</h3>
+                <p>Travel Consultant</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </section>
+    <footer>
+        <p>
+            © 2026 TravelBloom | Explore the World
+        </p>
+    </footer>
+    <script src="travel_recommendation.js"></script>
+</body>
+
+</html>
