@@ -147,21 +147,12 @@ function searchRecommendation() {
     results.forEach(item => {
 
         recommendationResults.innerHTML += `
-
         <div class="card">
-
-            <img src="${item.imageUrl}" alt="${item.name}">
-
             <div class="card-content">
-
                 <h3>${item.name}</h3>
-
                 <p>${item.description}</p>
-
             </div>
-
         </div>
-
         `;
 
     });
