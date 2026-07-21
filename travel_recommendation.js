@@ -21,9 +21,6 @@ function createCard(item) {
 
     return `
         <div class="card">
-
-            <img src="${item.imageUrl}" alt="${item.name}">
-
             <div class="card-content">
 
                 <h3>${item.name}</h3>
@@ -182,17 +179,20 @@ function clearSearch() {
 }
 
 if (contactForm) {
-
-    contactForm.addEventListener("submit", function (e) {
-
-        e.preventDefault();
-
-        alert("Thank you for contacting TravelBloom!");
-
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        alert(
+            "Thank you, " +
+            name +
+            "!\n\nYour message has been received.\nWe will contact you at " +
+            email +
+            " soon."
+        );
         contactForm.reset();
-
     });
-
 }
 
 function updateTime() {

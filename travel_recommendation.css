@@ -193,20 +193,25 @@ body {
 }
 
 .about {
-    padding: 60px;
-    background: white;
+    padding: 70px 10%;
+    background: #f4f8fc;
 }
 
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about h1,
 .about h2 {
     text-align: center;
     color: #0d47a1;
     margin-bottom: 20px;
 }
 
-.about>p {
-    max-width: 900px;
-    margin: auto;
+.about p {
     text-align: center;
+    line-height: 1.8;
     margin-bottom: 40px;
 }
 
@@ -215,61 +220,84 @@ body {
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .member {
-    width: 250px;
-    background: #f8f9fa;
+    width: 300px;
+    background: white;
     border-radius: 10px;
-    text-align: center;
-    padding: 25px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
 }
 
 .member h3 {
     color: #1565c0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.instructions {
+    width: 70%;
+    margin: auto;
+    line-height: 2;
 }
 
 .contact {
     background: #eef5fb;
-    padding: 60px;
+    padding: 70px 10%;
 }
 
-.contact h2 {
+.contact-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact h1 {
     text-align: center;
     color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
     margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+.contact-info p {
+    margin: 8px 0;
 }
 
 #contactForm {
-    width: 550px;
-    max-width: 95%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #contactForm input,
 #contactForm textarea {
-    width: 100%;
     margin-bottom: 20px;
-    padding: 14px;
-    border-radius: 5px;
+    padding: 12px;
     border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
 }
 
-#contactForm textarea {
-    resize: vertical;
-}
-
 #contactForm button {
-    width: 100%;
     padding: 14px;
+    border: none;
     background: #0d47a1;
     color: white;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 #contactForm button:hover {
